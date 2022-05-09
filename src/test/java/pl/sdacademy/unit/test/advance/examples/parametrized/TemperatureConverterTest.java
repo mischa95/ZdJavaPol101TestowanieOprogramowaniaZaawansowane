@@ -8,6 +8,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class TemperatureConverterTest {
 
+    public static void main(String[] args) {
+        TemperatureConverter celsiusKelvin = TemperatureConverter.KELVIN_CELSIUS;
+        float result = celsiusKelvin.convertTemp(100);
+    }
+
     @ParameterizedTest
     @EnumSource(TemperatureConverter.class)
     void shouldConvertToValueHigherThanMinInteger(TemperatureConverter converter) {
