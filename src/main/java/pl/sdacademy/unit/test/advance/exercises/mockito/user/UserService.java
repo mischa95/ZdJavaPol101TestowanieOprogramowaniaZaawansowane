@@ -13,7 +13,7 @@ public class UserService {
         return userRepository.findById(id).orElseThrow();
     }
 
-    public User createUser(final User user) {
+    public User createUser(final UserDto user) {
         if (userValidator.isUserValid(user)) {
             return userRepository.addUser(user);
         }
