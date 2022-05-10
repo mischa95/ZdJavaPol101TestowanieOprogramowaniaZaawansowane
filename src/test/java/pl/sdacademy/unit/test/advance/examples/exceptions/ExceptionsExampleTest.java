@@ -15,7 +15,7 @@ class ExceptionsExampleTest {
         //JUnit5
         assertThrows(IllegalArgumentException.class,
                 () -> ExceptionsExample.someMagicOperation(input),
-                "String cannot have length equal 5");
+                "cos nie pykło");
         //AssertJ
         assertThatThrownBy(() -> ExceptionsExample.someMagicOperation(input))
                 .isInstanceOf(IllegalArgumentException.class)
